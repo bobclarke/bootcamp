@@ -1,0 +1,9 @@
+version: '3'
+services:
+  quote_server:
+    build: ./quote_server
+    ports:
+      - "5000:5000"
+
+  quote_db:
+    build: ./quote_db
