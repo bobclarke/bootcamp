@@ -10,7 +10,6 @@ def hello():
 @app.route("/quote")
 def quote():
 	all_results = ""
-	#myclient = pymongo.MongoClient("mongodb://localhost:27017/")
 	myclient = pymongo.MongoClient("mongodb://mongo:27017/")
 	mydb = myclient["quotes_db"]
 	mycol = mydb["quotes_col"]
