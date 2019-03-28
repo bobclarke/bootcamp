@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: quote-db
+  namespace: bootcamp
+  labels:
+    app: db
+spec:
+  containers:
+  - name: mongo
+    image: mongo

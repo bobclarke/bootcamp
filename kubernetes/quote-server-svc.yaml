@@ -1,0 +1,13 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: quote-server-svc
+  namespace: bootcamp
+spec:
+  selector:
+    app: quote-server
+  ports:
+  - protocol: TCP
+    port: 5000
+    targetPort: 5000
+  type: LoadBalancer

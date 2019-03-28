@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: db-svc
+  namespace: bootcamp
+spec:
+  selector:
+    app: db
+  ports:
+  - protocol: TCP
+    port: 27017
+    targetPort: 27017
